@@ -1,3 +1,4 @@
+// Online C++ compiler to run C++ program online
 
 #include <iostream>
 using namespace std;
@@ -9,7 +10,7 @@ int main() {
    cout<<"Enter gallons used: ";
    cin>> gallons_used;//Get values for gallons_used
    
-   cout<<"Enter starting milage";
+   cout<<"Enter starting milage: ";
    cin>> starting_mileage;//Get values for values for starting_milage
    
    cout<<"Enter ending milage: ";

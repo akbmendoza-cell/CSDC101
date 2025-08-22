@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+    float balance = 100,  rate = 0.05, earned, total; // variables
+    
+    earned = balance * rate;// product of 2 numbers
+    total =  balance + earned;// total 
+    
+    cout<< "amount earned is: "<< earned;// output of earned
+    cout<< " ending balance is: "<< total;// totality
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+    int num1 = 10, num2 = 8, average;// variables
+    
+    average = num1 + num2;// sum of 2 
+    if(num1 > average){;// calcutake if num greater than ave
+    cout<<" you did better than average"; // print you did better
+}
+    else{ 
+    cout<<"You did worse than average";// print you did worse than average
+    
+    }   
+    return 0;
+}

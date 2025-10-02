@@ -17,7 +17,21 @@ Enter your money: 0.75
 
 Sample Output:
 Sorry, you need more money.
+==============================================================================
+#include <iostream>
+using namespace std;
 
+int main() {
+    float money;
+    money = 0.75;// variable
+    if (money >= 1){//greater or less than condition
+        cout<<"Enjoy your lemonade!";//output
+    }
+    else{
+        cout<<"Sorry, you need more money.";//output
+    }
+    return 0;
+}
 
 
   

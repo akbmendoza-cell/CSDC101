@@ -17,12 +17,13 @@ using namespace std;
 
 int main() {
     int temperature;
-    temperature = 30;//term
-    if (temperature >= 30){//condtion of greater than or equal
-       cout<<"$0.80";
+    cout<<"enter temperature: ";//input
+    cin>> temperature;
+    if (temperature >= 30){//condition of greater than or equal 30
+       cout<<"It's hot! Lemonade costs $0.80 today.";//output
     }
     else{
-        cout<<"$1.00";// if nopt equal 
+        cout<<"$1.00";//output
     }
     return 0;
 }

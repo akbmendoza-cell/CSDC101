@@ -1,0 +1,31 @@
+Problem 3: Inventory Check
+
+Problem:
+You can only sell lemonade if you have lemons and sugar.
+
+Task:
+Write a program that:
+
+Ask the user how many lemons and how many cups of sugar they have.
+If either lemons or sugar is 0 or less, 
+	output: "You can't make lemonade!"
+Otherwise,
+	output: "You're ready to sell lemonade!"
+=================================================================================
+#include <iostream>
+using namespace std;
+
+int main() {
+    int lemon, sugar ;
+    cout<<"how many lemons?: ";//input
+    cin>> lemon;
+    cout<<"how many sugar?: ";//input
+    cin>> sugar;
+    if (lemon <= 0 || sugar <= 0){/condition of if lemon is less than or equal 0 or sugar is less than or equal 0
+       cout<<"you can't make lemonade!.";//output
+    }
+    else{
+        cout<<"You're ready to sell lemonade!";//output
+    }
+    return 0;
+}

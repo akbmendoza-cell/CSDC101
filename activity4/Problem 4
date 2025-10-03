@@ -27,9 +27,12 @@ int main(){
    
    
    cout<<"how many cups?";
-   cin>> cups;                    Uncomplete
-   
-   switch( )
+   cin>> cups;
+                                              incomplete
+   if( cups <= 4 ){
+       cout << cups << "$";
+   }
+    else ()
    product = cups * 0.10;
    result = cups - product;
    cout<< result;

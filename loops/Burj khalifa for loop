@@ -2,25 +2,25 @@
 using namespace std;
 int main(){
     
-       for( int row = 1; row <= 10; row++){
+       for( int row = 1; row <= 10; row++){//outside loop
     
         
-         for( int column = 1; column <= row; column++){
-          cout<<"skibidi ";
+         for( int column = 1; column <= row; column++){// inner loop
+          cout<<"skibidi ";//output for triangle
         } 
         cout<< endl;
         
-       }
-             for(int row = 10; row >= 1; row--){
+       }//match match
+             for(int row = 10; row >= 1; row--){//outside loop
     
         
-                 for( int column = 1; column <= row; column++){
-                cout<<"toilet ";
+                 for( int column = 1; column <= row; column++){//inner loop
+                cout<<"toilet ";//output for inverted triangle
             } 
                 cout<< endl;
         
       
-    }
+    }//match match
  
     return 0;
 }

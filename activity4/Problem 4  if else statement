@@ -22,20 +22,27 @@ Total cost: $6.30
 ==================================================================
 #include <iostream>
 using namespace std;
-int main(){
-   float cups, product, result;
+int main()
+{
+    float cups, product, result;// variables
    
    
-   cout<<"how many cups?";
+   cout<<"how many cups? ";// input
    cin>> cups;
-                                              incomplete
-   if( cups <= 4 ){
+   
+   if( cups >= 1 && cups <= 4 ){
        cout << cups << "$";
    }
-    else ()
-   product = cups * 0.10;
-   result = cups - product;
-   cout<< result;
-  return 0;
- 
+      else if ( cups >= 5 && cups <= 9 ){ 
+          product = cups * 0.10;
+          result = cups - product;
+          cout<< result << "$";
+        }
+      else{ 
+       (cups >= 10 );
+          product = cups * 0.20;
+          result = cups - product;
+          cout<< result << "$";
+        }
+    return 0;
 }

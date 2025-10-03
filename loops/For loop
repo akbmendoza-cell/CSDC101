@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main(){
+    
+ for( int start = 0; start < 5; start++){// int start from 0 to 5 with the condtion of ++
+     cout<<"likey number"<< start<<endl;// output
+ }
+ 
+    return 0;
+}

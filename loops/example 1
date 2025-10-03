@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    
+ int number = 1;
+ char answer;
+ do{
+     cout<<" Do yo want to build a snowman"<<endl;
+     cin>> answer;
+     cout<<"sing it let it go "<< endl;
+ }
+ while(answer == 'y');
+ 
+ cout<< "okay bye"<<endl;
+ 
+    return 0;
+}

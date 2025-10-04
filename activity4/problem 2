@@ -17,13 +17,19 @@ using namespace std;
 
 int main() {
     int temperature;
+    char move;
+    do{ // instruction where the loop starts
     cout<<"enter temperature: ";//input
     cin>> temperature;
     if (temperature >= 30){//condition of greater than or equal 30
-       cout<<"It's hot! Lemonade costs $0.80 today.";//output
+       cout<<"It's hot! Lemonade costs $0.80 today."<<endl;//output
     }
     else{
-        cout<<"$1.00";//output
+        cout<<"$1.00"<<endl;//output
     }
+    cout<< "Do you want to try agian?(y/n) ";
+    cin>> move;
+  }//loop ends here
+   while (move == 'y'|| move == 'Y'); //loop
     return 0;
 }

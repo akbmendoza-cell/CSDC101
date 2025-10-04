@@ -20,18 +20,23 @@ Sorry, you need more money.
 ==============================================================================*/
 #include <iostream>
 using namespace std;
-
-int main() {
-    float money;
-    money = 0.75;// variable
+int main()
+{
+  char move1, money ;// variable
+    do{
+    cout<< "how much money do you have? ";
+    cin>> money;
     if (money >= 1){//greater or less than condition
-        cout<<"Enjoy your lemonade!";//output
+        cout<<"Enjoy your lemonade!"<<endl;//output
     }
     else{
-        cout<<"Sorry, you need more money.";//output
+        cout<<"Sorry, you need more money."<<endl;//output
     }
+    cout<<"Do you want to start again (y/n)? ";
+    cin>> move1;
+  }
+  while ( move1 == 'y' || move1 == 'Y' );
     return 0;
 }
-
-
+  
   

@@ -1,4 +1,4 @@
-Problem 5: Player Movement
+/*Problem 5: Player Movement
 
 Problem:
 The player moves depending on the pressed button. Player starts at (0,0).
@@ -19,6 +19,51 @@ W
 
 Sample Output:
 The location of the player is ( 0, 1)
-==============================================================
+==============================================================*/
+#include <iostream>
+using namespace std;
 
+int main() {
+    
+    int  z = 0, x = 0;
+    char move, move1 ;
+    do{
+    cout<<"-----Player movement-----"<<endl;
+    cout<<"Enter command: ";
+    cin>> move;
+    switch (move){
+     case 'w':
+     case 'W':
+     x += 1;
+     break;
+     
+     case 'a':
+     case 'A':
+     z -= 1;
+     break;
+     
+     case 's':
+     case 'S':
+     z -= 1;
+     break;
+
+     case 'd':
+     case 'D':
+     x += 1;
+     break;
+    default:
+     cout<<"invalid command! ";
+     break;
+    }
+
+    cout << " the location of the player is " << z <<"," << x <<endl;
+    cout <<"Do you want to choose again? (y/n): ";
+    cin >> move1;
+    }
+      while (move1 == 'y'|| move1 == 'Y');  
+    
+      
+    
+    return 0;
+}
 

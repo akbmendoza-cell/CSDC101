@@ -1,4 +1,4 @@
-Problem 1: Basic Pricing Decision
+/*Problem 1: Basic Pricing Decision
 
 Problem:
 You sell one cup of lemonade for $1. If a customer has $1 or more, they can buy a cup.
@@ -17,7 +17,7 @@ Enter your money: 0.75
 
 Sample Output:
 Sorry, you need more money.
-==============================================================================
+==============================================================================*/
 #include <iostream>
 using namespace std;
 

@@ -1,0 +1,134 @@
+/*Problem 6: Switch problem 1 to 5
+Combine all problems using switch statement
+
+Sample Input:
+What problem do you want to see? 1
+
+Sample Output:
+*Basic pricing Decision Runs*
+
+Submit a cpp file, a link to your github repository, or a notion page.
+========================================================================================*/
+#include <iostream>
+using namespace std;
+int main()
+{
+   char again, choice;
+   do{
+   cout << "-----Switch Problem-----" << endl;
+    cout << "Enter 1 to run Basic Pricing Decision" << endl;
+    cout << "Enter 2 to run  Weather-Based Discounts" << endl;
+    cout << "Enter 3 to run Inventory Check" << endl;
+    cout << "Enter 4 to run Bulk Purchase Discount" << endl;
+    cout << "Enter 5 to run  Player Movement" << endl;
+    cout << "------------------------" << endl;
+    cout << "Enter Choice: ";
+    cin >> choice;
+   switch(choice){
+   
+    case '1':
+  char cash;// variable
+    
+    cout<< "how much money do you have? ";
+    cin>> cash;
+    if (cash >= 1){//greater or less than condition
+        cout<<"Enjoy your lemonade!"<<endl;//output
+    }
+    else{
+        cout<<"Sorry, you need more money."<<endl;//output
+    }
+    break;
+  
+    case '2':
+   int  money ;// variable
+    cout<< "how much money do you have? ";
+    cin>> money;
+    if (money >= 1){//greater or less than condition
+        cout<<"Enjoy your lemonade!"<<endl;//output
+    }
+    else{
+        cout<<"Sorry, you need more money."<<endl;//output
+    }
+    break;
+    
+    case '3':
+  int lemon, sugar ;
+    cout<<"how many lemons?: ";//input
+    cin>> lemon;
+    cout<<"how many sugar?: ";//input
+    cin>> sugar;
+    if (lemon <= 0 || sugar <= 0){//condition of if lemon is less than or equal 0 or sugar is less than or equal 0
+       cout<<"you can't make lemonade!"<<endl;//output
+    }
+    else{
+        cout<<"You're ready to sell lemonade!"<<endl;//output
+    }
+   break;
+   
+   case '4':
+   float cups, product, result;// variables
+   cout<<"how many cups? ";// input
+   cin>> cups;
+   
+   if( cups >= 1 && cups <= 4 ){
+       cout << cups << "$"<<endl;
+   }
+      else if ( cups >= 5 && cups <= 9 ){ 
+          product = cups * 0.10;
+          result = cups - product;
+          cout<< result << "$"<<endl;
+        }
+      else{ 
+       (cups >= 10 );
+          product = cups * 0.20;
+          result = cups - product;
+          cout<< result << "$"<<endl;
+        }
+    break;
+    
+    case '5':
+     int  z = 0, x = 0;
+    char move, move1 ;
+    do{
+    cout<<"-----Player movement-----"<<endl;
+    cout<<"Enter command: ";
+    cin>> move;
+    switch (move){
+     case 'w':
+     case 'W':
+     x += 1;
+     break;
+     
+     case 'a':
+     case 'A':
+     z -= 1;
+     break;
+     
+     case 's':
+     case 'S':
+     z -= 1;
+     break;
+
+     case 'd':
+     case 'D':
+     x += 1;
+     break;
+
+    cout << " the location of the player is " << z <<"," << x <<endl;
+    cout <<" do you want to chooose agian? (y/n): ";
+    cin >> move1;
+     }
+       while (move1 == 'y'|| move1 == 'Y');  
+       break;
+    
+    default:
+    cout<< "that won't work lil bro";
+    break;
+    }
+  cout<<"do you want to try agian? (y/n) ";
+  cin>> again;
+ }
+  while (again == 'y' || again == 'Y');
+  
+  return 0;
+}

@@ -1,0 +1,41 @@
+ int main() {
+    int size;
+    std::cout<<"enter size:";
+    std::cin>> size;
+
+    // Top semi-circular parts of the heart
+    for (int a = size / 2; a <= size; a += 2) {
+        // Print leading spaces
+        for (int b = 1; b < size - a; b += 2) {
+            std::cout << " ";
+        }
+        // Print left semi-circle
+        for (int b = 1; b <= a; b++) {
+            std::cout << "*";
+        }
+        // Print spaces between semi-circles
+        for (int b = 1; b <= size - a; b++) {
+            std::cout << " ";
+        }
+        // Print right semi-circle
+        for (int b = 1; b <= a - 1; b++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl; // Move to the next line
+    }
+
+    // Base of the heart (inverted triangle)
+    for (int a = size; a >= 0; a--) {
+        // Print leading spaces for the inverted triangle
+        for (int b = a; b < size; b++) {
+            std::cout << " ";
+        }
+        // Print the base of the triangle
+        for (int b = 1; b <= (a * 2) - 1; b++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl; // Move to the next line
+    }
+
+    return 0;
+}

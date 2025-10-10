@@ -11,7 +11,7 @@ int main(){
         cout<< endl;
         
        }//match match
-             for(int row = 10; row >= 1; row--){//outside loop
+             for(int row = 10; row >= 1; row--){//outside loop// when manipulating only the outside loop changes
     
         
                  for( int column = 1; column <= row; column++){//inner loop

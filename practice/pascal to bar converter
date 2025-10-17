@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+ char choice;
+ float value, result;
+ int number;
+ 
+ do {
+ cout<<"=== Pressure unit converter==="<<endl;
+ cout<<"1. Pascal to Bar"<<endl;
+ cout<<"2. Pascal to PSI"<<endl;
+ cout<<"3. Bar to pascal"<<endl;
+ cout<<"4. Psi to Pascal"<<endl;
+ cout<<"5. Exit"<<endl;
+ cout<<"choose an option: ";
+ cin>>choice;
+ 
+ switch(choice){
+ case '1':
+ cout<<"Enter value in Pascal: ";
+ cin>>value;
+ result = value /100000;
+ cout<<"result: "<< result <<" bar" <<endl;
+ break;
+ 
+ case '2':
+ cout<<"Enter value in pascal: ";
+ cin>>value;
+ 
+ result = value / 6894.76;
+ cout<<"result: "<<result<< "PSI"<<endl;
+ break;
+ 
+ case'3':
+ cout<<"Enter value of bar:";
+ cin>>value;
+ 
+ result = value * 100000;
+ cout<<"result: "<<result<< " Bar"<< endl;
+ break;
+ 
+ case '4':
+ cout<<" enter value of PSI: ";
+ cin>>value;
+ result = value * 6894.76;
+ cout<<"result: "<<result<< " pascal"<<endl;
+  break;
+  
+  default:
+  cout<<"closing program"<<endl;
+ }
+  cout<<" do you want to try again (1 = yes) (0 = no)";
+  cin>>number;
+  }while(number ==1);
+  cout<<"closing program";
+return 0;
+}

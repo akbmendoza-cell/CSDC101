@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+ int num, res;
+ int number;
+ 
+ do {
+ 
+  cout << "enter a number: ";
+  cin>>number;
+  
+  for (int i = 1; i <= 10; i++){
+  res = i * number;
+  cout<< i << "x " << number << " = " << res << endl;
+ 
+ }
+  cout<<" do you want to try again (1 = yes) (0 = no)";
+  cin>>number;
+  }while(number ==1);
+  cout<<"closing program";
+return 0;
+}

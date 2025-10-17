@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{  
+    int n, eve;
+    cin >> n;
+    eve = n % 2;// outp[uts the remainder
+    if(eve == 0 ){
+        cout << "even"<<endl;
+    }else{
+        cout << "odd" << endl;
+    }
+    return 0;
+}

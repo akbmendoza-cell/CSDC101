@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, result, rating1, rating2, rating3, rating4, rating5;
+    double result2;
+    cout<<"===== Christine's Lover rating System ====="<<endl;
+    cout<<" Enter number of lovers to rate: ";
+    cin>>n;
+
+    for(int i = 1; i <= n; i++ ){
+        cout<<"--- lover #"<< i<<" ---"<<endl;
+        cout<<"Physical Apperance (1 -100): ";
+        cin>>rating1;
+        cout<<"Emotion Intelligence (1 -100): ";
+        cin>>rating2;
+        cout<<"Finanace (1 -100): ";
+        cin>>rating3;
+        cout<<"Hygiene (1 -100): ";
+        cin>>rating4;
+        cout<<"Confidence (1 -100): ";
+        cin>>rating5;
+        
+        result = rating1 + rating2 + rating3 + rating4 + rating5;
+        result2 = result / 5;
+        cout <<"Average Score: "<<result2 <<endl;
+        
+        if (rating2 >= 90 || rating2 == 100){
+            cout<<"💘 Excellent Lover"<<endl;
+            
+        }
+        else if( rating2 >= 80 || rating2 == 89 ){
+            cout<<"💞 Great Lover"<<endl;
+           
+        }
+        else if (rating2 >= 70 || rating2 == 79){
+            cout<<"💓 Good Lover"<<endl;
+            
+        }
+
+        else if (rating2 >= 60 || rating2 == 69){
+            cout<<"💔 Needs Improvement"<<endl;
+            
+        }
+        else{
+            cout<<"🚫 Not Lover Material"<<endl;
+        }
+        cout<<endl;
+    }
+    cout<<endl;
+    return 0;
+}  

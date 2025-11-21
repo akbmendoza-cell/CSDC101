@@ -1,0 +1,15 @@
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+int main (){
+  
+  char name [18] = " Blonde Blazer" ;// Array size is 18, string lenght is 14
+  char unintialized [15];
+  char auto_size[] = "Mechaman";// Array size is undefined, string lenght is 8
+  
+  //Functions
+  cout<< " The length of the string is " << strlen(name) << endl;
+  cout<< " The lenght of the string is" << strlen(auto_size)<< endl;
+  }

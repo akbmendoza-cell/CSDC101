@@ -1,33 +1,37 @@
 #include <iostream>
 using namespace std;
-int main() {
-    double n, m; 
-    char choice; 
 
-    cout<<"Temperature Converter"<< endl;
-    cout<<"1 - Celsius To Fahrenheit"<< endl;
-    cout<<"2 - Fahrenheit to Celsius"<<endl;
-    cout<<"Enter choice: ";
-    cin>> choice;
-
-    switch(choice){
-        case '1':
-        cout<<" Enter temperature in Celsius: ";
-        cin>> n;
-        m = (n * 9.0/5.0 )+ 32;
-        cout<<"Result: "<< n << "C = "<< m <<"F";
-        break;
-
-        case '2':
-        cout<<" Enter temperature in Fahrenheit: ";
-        cin>> n;
-        m = (n - 32) * 5.0/9.0;
-        cout<<"Result: "<< n << "F = "<< m <<"C";
-        break;
-        
-        default:
-        cout<<"Not a command"<<endl;
-    }
+int main()
+{
+    int Fahrenheit, Celsius;
+    char choices, again; 
+    do{
+   cout<<"Temperature Converter"<<endl;
+   cout<<"1 - Celsius to Fahrenheit"<<endl;
+   cout<<"2 - Fahrenheit to Celsius"<<endl;
+   cout<<"Enter choice: ";
+   cin>>choices;
+   switch(choices){
+       case '1':
+       cout<<"Enter Temperature in Celsius: ";
+       cin>>Celsius;
+       Fahrenheit = (Celsius * 9 / 5) + 32;
+       cout<<"Result: "<<Fahrenheit<< "F"<<endl;
+       break;
+       
+       case '2':
+       cout<<"Enter Temperature in Fahrenheit: ";
+       cin>>Fahrenheit;
+       Celsius= (Fahrenheit - 32) * 5/9;
+       cout<<"Result: "<<Celsius<< "C"<<endl;
+       break;
+       
+       default:
+       cout<<"that is not a command";
+   }
+    cout<<"Do you want to move again? (y/n)";
+    cin>>again;
+    } while (again == 'y' || again == 'Y');
     
     return 0;
 }

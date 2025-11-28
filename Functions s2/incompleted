@@ -1,0 +1,63 @@
+
+#include <iostream>
+#include <ctime>
+#include <cmath>
+using namespace std;
+void printWelcome();
+int generateRandomNumber();
+
+
+
+
+
+
+
+int main(){
+    
+    printWelcome();
+    cout<<endl;
+    
+    int result = generateRandomNumber();
+    cout<<endl;
+    
+    int d = 10;
+    printSquare(d);
+    
+    float result = calculateAverage(6, 7, 8);
+    cout<<result<<endl;
+    
+    bool a ;
+    getRandomBoolean(a);
+   
+  
+    return 0;
+}
+void printWelcome(){//number 1
+    cout<<"Welcome to C++ Functions!"<<endl;
+}
+int generateRandomNumber (int a){//number 2: integer randomizer
+    srand(time(0));
+    a = rand () % 100;
+    cout<<"1-100 integer randomizer: "<<a<<endl;
+    return a;
+}
+void printSquare(int a){
+    sqrt(a);
+}
+
+float calculateAverage(float a, float b, float c){//number 9: average
+    cout<<"the average is: ";
+    return(a + b + c) / 3;
+}
+bool getRandomBoolean(int a){//number 10: Boolean randomizer
+    srand(time(0));
+    a = rand() % 2;
+    if (a ==1){
+    cout<<"True";
+    return true;
+    }
+    else {
+        cout<<"False";
+        return false;
+    }
+}

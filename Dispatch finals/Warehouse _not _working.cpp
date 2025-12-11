@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <thread>//function for pause
 #include <chrono>// declaration of seconds and milliseconds
@@ -72,14 +73,6 @@ void warehouse(){
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
         this_thread::sleep_for(chrono::seconds(4));
-                                cout<<"??? : All this buildup. "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
-                        cout<<"??? turns around*"<<endl;
-        this_thread::sleep_for(chrono::seconds(4));
-                        cout<<"Soothing voice: Face to face with your father's killer and you come in here with that lame shit?"<<endl;
-        this_thread::sleep_for(chrono::seconds(6));
-                        cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Soothing voice: He'll be here in a bit"<<endl;
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Oh, hey, after our conversation, I asked him about your dad. "<<endl;
@@ -113,14 +106,6 @@ void warehouse(){
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
         this_thread::sleep_for(chrono::seconds(4));
-                                cout<<"??? : All this buildup. "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
-                        cout<<"??? turns around*"<<endl;
-        this_thread::sleep_for(chrono::seconds(4));
-                        cout<<"Soothing voice: Face to face with your father's killer and you come in here with that lame shit?"<<endl;
-        this_thread::sleep_for(chrono::seconds(6));
-                        cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Soothing voice: He'll be here in a bit"<<endl;
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Oh, hey, after our conversation, I asked him about your dad. "<<endl;
@@ -148,7 +133,7 @@ void warehouse(){
         this_thread::sleep_for(chrono::seconds(4));
                     cout<<"???: Ohhh, Maybe we can go virallll. . ."<<endl;
         this_thread::sleep_for(chrono::seconds(4));
-                                cout<<"??? : All this buildup. "<<endl;
+                    cout<<"??? : All this buildup. "<<endl;
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"??? turns around*"<<endl;
         this_thread::sleep_for(chrono::seconds(4));
@@ -156,14 +141,6 @@ void warehouse(){
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
         this_thread::sleep_for(chrono::seconds(4));
-                                cout<<"??? : All this buildup. "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
-                        cout<<"??? turns around*"<<endl;
-        this_thread::sleep_for(chrono::seconds(4));
-                        cout<<"Soothing voice: Face to face with your father's killer and you come in here with that lame shit?"<<endl;
-        this_thread::sleep_for(chrono::seconds(6));
-                        cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Soothing voice: He'll be here in a bit"<<endl;
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Oh, hey, after our conversation, I asked him about your dad. "<<endl;
@@ -200,14 +177,6 @@ void warehouse(){
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
         this_thread::sleep_for(chrono::seconds(4));
-                                cout<<"??? : All this buildup. "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
-                        cout<<"??? turns around*"<<endl;
-        this_thread::sleep_for(chrono::seconds(4));
-                        cout<<"Soothing voice: Face to face with your father's killer and you come in here with that lame shit?"<<endl;
-        this_thread::sleep_for(chrono::seconds(6));
-                        cout<<"You: Ugh. Where the fuck is shroud? "<<endl;
-        this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Soothing voice: He'll be here in a bit"<<endl;
         this_thread::sleep_for(chrono::seconds(5));
                         cout<<"Oh, hey, after our conversation, I asked him about your dad. "<<endl;
@@ -525,7 +494,7 @@ void warehouse(){
 
 int main()
 {
-    void warehouse();
+    warehouse();
 
     return 0;
 }

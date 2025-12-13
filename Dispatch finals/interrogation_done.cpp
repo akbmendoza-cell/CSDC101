@@ -381,7 +381,7 @@ void scene_apartment_interrogation(){
          this_thread::sleep_for(chrono::seconds(2));
                   cout<<"! He will remember that. "<<endl;
          this_thread::sleep_for(chrono::seconds(2));
-         isMercyful = true;
+         isMercyful = false;
          
     }
     else if(w == 'd'|| w == 'D'){
@@ -392,7 +392,7 @@ void scene_apartment_interrogation(){
          this_thread::sleep_for(chrono::seconds(2));
                   cout<<"! He will remember that. "<<endl;
          this_thread::sleep_for(chrono::seconds(2));
-         isMercyful = false;
+         isMercyful = true;
     }
     else{
       typewrite("\nRobert: Sir. If you want something to scream about, I'll give you something to scream about");

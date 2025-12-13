@@ -1,34 +1,43 @@
 #include <iostream>
+#include <unistd.h>// function for typewrite 
+#include <string>
 #include <thread>//function for pause
 #include <chrono>// declaration of seconds and milliseconds
 using namespace std;
+void typewrite(string text, int speed = 50000){
+    for ( char c : text){
+        cout << c << flush;
+        
+        usleep(speed);
+    }
+}
 
 void scene_apartment_interrogation(){
-   cout<<"Welcome to Dispatch"<<endl;
-   this_thread::sleep_for(chrono::seconds(3));
-   cout<<"Exclusively made by Aljosh Mendoza of ZT13"<<endl;
-   this_thread::sleep_for(chrono::seconds(4));
-   cout<<"NOTE: input a command not among the choices will result in bad outcomes. . ."<<endl;
-   this_thread::sleep_for(chrono::seconds(3));
+   typewrite("\nWelcome to Dispatch");
+   this_thread::sleep_for(chrono::seconds(1));
+   typewrite("Exclusively made by Aljosh Mendoza of ZT13");
+   this_thread::sleep_for(chrono::seconds(1));
+   typewrite("\nNOTE: input a command not among the choices will result in bad outcomes. . .");
+   this_thread::sleep_for(chrono::seconds(1));
    cout<<"."<<endl;
-   this_thread::sleep_for(chrono::seconds(2));
+   this_thread::sleep_for(chrono::seconds(1));
    cout<<"."<<endl;
-   this_thread::sleep_for(chrono::seconds(2));
+   this_thread::sleep_for(chrono::seconds(1));
    cout<<"."<<endl;
-   this_thread::sleep_for(chrono::seconds(2));
+   this_thread::sleep_for(chrono::seconds(1));
    cout<<"."<<endl;
-   this_thread::sleep_for(chrono::seconds(2));
-   cout<<"Robert: Obviously, I love him. He's my Dad. "<<endl;
+   this_thread::sleep_for(chrono::seconds(1));
+   typewrite("\nRobert: Obviously, I love him. He's my Dad. ");
     this_thread::sleep_for(chrono::seconds(3));// delay command for each outputs
-    cout<<"Soothing Voice: Hmm..."<<endl;
+    typewrite("\nSoothing Voice: Hmm...");
     this_thread::sleep_for(chrono::seconds(3));
-    cout<<"Robert: What does that hmm mean? Just say what you wanna say? "<<endl;
+    typewrite("\nRobert: What does that hmm mean? Just say what you wanna say? ");
     this_thread::sleep_for(chrono::seconds(3));
-    cout<<"Soothing voice: It's just, When you add obviously it feels a little less obvious. "<<endl;
+    typewrite("\nSoothing voice: It's just, When you add obviously it feels a little less obvious. ");
     this_thread::sleep_for(chrono::seconds(3));
-    cout<<"Soothing Voice: So, I'll ask again..."<<endl;
+    typewrite("\nSoothing Voice: So, I'll ask again...");
     this_thread::sleep_for(chrono::seconds(3));
-    cout<<"Soothing Voice: How do you really feel about your father? "<<endl;
+    typewrite("\nSoothing Voice: How do you really feel about your father? ");
     this_thread::sleep_for(chrono::seconds(3));
     char a, w;
     cout<<"A = I love my dad."<<endl;
@@ -40,25 +49,25 @@ void scene_apartment_interrogation(){
     cin>>a;
 
      if (a == 'A' || a =='a'){
-        cout<<"Soothing voice: It's as if, maybe, It's a little more complicated than you feel comfortable admitting.. "<<endl;
-        this_thread::sleep_for(chrono::seconds(4));
-        cout<<" Which is completely understandable."<<endl;
+        typewrite("\nSoothing voice: It's as if, maybe, It's a little more complicated than you feel comfortable admitting.. ");
+        this_thread::sleep_for(chrono::seconds(2));
+        typewrite("\n Which is completely understandable.");
+        this_thread::sleep_for(chrono::seconds(2));
+        typewrite("\nRobert: look, I love my dad, alright? I love my dad. That's the truth. ");
+        this_thread::sleep_for(chrono::seconds(2));
+        typewrite("\nSoothing voice: loved ");
+        this_thread::sleep_for(chrono::seconds(2));
+        typewrite("\nRobert: That's what i said. ");
         this_thread::sleep_for(chrono::seconds(3));
-        cout<<"Robert: look, I love my dad, alright? I love my dad. That's the truth. "<<endl;
-        this_thread::sleep_for(chrono::seconds(4));
-        cout<<"Soothing voice: loved "<<endl;
+        typewrite("\nSoothing voice: you said loved... ")
         this_thread::sleep_for(chrono::seconds(3));
-        cout<<"Robert: That's what i said. "<<endl;
+        typewrite("\n Your dad's dead, so you don't love him, you loved him. ");
         this_thread::sleep_for(chrono::seconds(3));
-        cout<<"Soothing voice: you said loved... "<<endl;
-        this_thread::sleep_for(chrono::seconds(3));
-        cout<<" Your dad's dead, so you don't love him, you loved him. "<<endl;
-        this_thread::sleep_for(chrono::seconds(3));
-        cout<<"Robert: why would i be trying to find the man who killed him if I didn't love him? "<<endl;
+        typewrite("\nRobert: why would i be trying to find the man who killed him if I didn't love him? ");
          this_thread::sleep_for(chrono::seconds(3));
-         cout<<" Why would we be in any of this— this— "<<endl;
+         typewrite("\n Why would we be in any of this— this— ");
          this_thread::sleep_for(chrono::seconds(3));
-         cout<<"Nose starts to bleed*"<<endl;
+         typewrite("\nNose starts to bleed*");
          this_thread::sleep_for(chrono::seconds(3));
          cout<<"Robert: shit. My nose is bleeding. Thought i was getting emotionally snotty."<<endl;
          this_thread::sleep_for(chrono::seconds(4));
@@ -399,4 +408,3 @@ int main() {
   scene_apartment_interrogation();
     return 0;
 }
-

@@ -1,0 +1,369 @@
+
+
+#include <iostream>
+#include <unistd.h>// function for typewrite 
+#include <string>
+#include <thread>//function for pause
+#include <chrono>// declaration of seconds and milliseconds
+using namespace std;
+int blonde_blazerInterest = 0;
+void typewrite(string text, int speed = 1000){
+    for ( char c : text){
+        std::cout << c << flush;
+        
+        usleep(speed);
+    }
+}
+void streetfight(){
+        typewrite("\n Tv: Up next");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Is Mecha Man a Mecha quitter? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Random dude: Yeah, I mean, it seems like it'd be better if he died than be a mecha coward, you know? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n What kind of example if he setting? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Robbers breaking in store*");
+         this_thread::sleep_for(chrono::seconds(2));
+         cout<<" "<<endl;
+         int w;
+         cout<<"=====CHOICE====="<<endl;
+         cout<<"W = Put it down and leave. "<<endl;
+         cout<<"A = that's pretty disrespectful"<<endl;
+         cout<<"D = I was watching that. "<<endl;
+         cin>>w;
+         if(w == 'w' || w == 'W'){
+         typewrite("\n Hey, assholes. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Goons notices*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah. Just put the TV's back and you can leave. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n I won't say anything to the cops and this doesn't need to escalate. ");
+          typewrite("\n Red goon: aye! Who're you callin' assholes, asshole!? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nOrange goon: I'll handle this idiot. Keep loading. We're out of here in thirty,  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n And who the fuck are you?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah, you. Go go fucking hobo ranger. Who the fuck are you? Choice");
+         cout<<" "<<endl;
+         }
+         else if( w == 'a' || w == 'A'){
+         typewrite("\n Hey, assholes. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Goons notices*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah. All you assholes. Pretty disrespectful for you to be doing that in front of me. ");
+         this_thread::sleep_for(chrono::seconds(2));
+          typewrite("\n Red goon: aye! Who're you callin' assholes, asshole!? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nOrange goon: I'll handle this idiot. Keep loading. We're out of here in thirty,  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n And who the fuck are you?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah, you. Go go fucking hobo ranger. Who the fuck are you? Choice");
+         cout<<" "<<endl;
+         }
+         else if ( w == 'd' || w == 'D'){
+         typewrite("\n Hey, assholes. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Goons notices*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah. All you assholes. I was fucking watching that. ");
+          typewrite("\n Red goon: aye! Who're you callin' assholes, asshole!? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nOrange goon: I'll handle this idiot. Keep loading. We're out of here in thirty,  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n And who the fuck are you?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah, you. Go go fucking hobo ranger. Who the fuck are you? Choice");
+         cout<<" "<<endl;
+         }
+         else {
+         typewrite("\n Hey, assholes. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Goons notices*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah. Just put the TV's back and you can leave. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n I won't say anything to the cops and this doesn't need to escalate. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Red goon: aye! Who're you callin' assholes, asshole!? ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nOrange goon: I'll handle this idiot. Keep loading. We're out of here in thirty,  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n And who the fuck are you?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Yeah, you. Go go fucking hobo ranger. Who the fuck are you? Choice");
+         cout<<" "<<endl;
+         }
+         int d;
+         cout<<"=====CHOICE====="<<endl;
+         cout<<"W = someone with nothing to lose."<<endl;
+         cout<<"A = I'm Mecha Man. "<<endl;
+         cout<<"D = Honestly, not sure anymore. "<<endl;
+         cin>>d;
+         if(d == 'a' || d == 'A'){
+         typewrite("\n You: I'm Mecha Man. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Green goon: you're not Mecha Man. That's Mecha Man. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: I'm Mecha Man, dipshit, okay? That's my suit. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Orange goon: well, you're gonna be wishin' you had it right now.");
+         this_thread::sleep_for(chrono::seconds(2));
+           this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nYou: whatever the case, im enough to deal with a pack of fuckin' skittles idiots like you. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Orange goon: Goddamnit. . .");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Look, you're hurt, you're not thinkin' straight.  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nYou don't wanna fight someone who knows which hand every punch is coming from- -  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         cout<<" "<<endl;
+         }
+         else if ( d == 'w' || d == 'W'){
+         typewrite("\n Someone with nothing to lose. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: Right now, I'm someone with nothing to lose. . .  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Which us probably bad news for you.  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Orange goon: Well. What nothing you have, you're about to lose again ");
+           this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nYou: whatever the case, im enough to deal with a pack of fuckin' skittles idiots like you. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Orange goon: Goddamnit. . .");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Look, you're hurt, you're not thinkin' straight.  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nYou don't wanna fight someone who knows which hand every punch is coming from- -  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         cout<<" "<<endl;
+         }
+         else if( d == 'd' || d == 'D'){
+         typewrite("\n You: Honestly. . . I'm not sure anymore.  ");
+         this_thread::sleep_for(chrono::seconds(2));
+          typewrite("\n Orange goon: right. Well, that feels heavy, ");
+         this_thread::sleep_for(chrono::seconds(2));
+          typewrite("\n But I don't know you so I don't give a fuck. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nYou: whatever the case, im enough to deal with a pack of fuckin' skittles idiots like you. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Orange goon: Goddamnit. . .");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Look, you're hurt, you're not thinkin' straight.  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\nYou don't wanna fight someone who knows which hand every punch is coming from- -  ");
+         this_thread::sleep_for(chrono::seconds(2));
+         cout<<" "<<endl;
+         }
+        int s;
+         cout<<"Note: Left arm is broken"<<endl;
+          cout<<"=====CHOICE====="<<endl;
+           cout<<"A = Punch with left "<<endl;
+            cout<<"D = punch with right"<<endl;
+        cin>>s;
+        if(s == 'd'|| s == 'D'){
+         typewrite("\n Misses punch*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Gets hit by a crowbar*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Receives heavy concussion* ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Note: This effect has long term effects throughout the fight”");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Random superhero swoops in for the save*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: That guy I threw. . . He landed on the roof, right?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: All good! ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: Phew");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blonde Blazer: Hi. I'm Blonde Blaze");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n I work over at Superhero Dispatch Network. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: hey. Hi. Yeah. I know who you are. You're, like, famous. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: Oh. Uh, I don't know about that. I'm just a corporate hero for hire. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You're the real deal. You're the famous one. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Sees the beat up hooligans");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: right. . . I don't think infamous is the same as famous, but - -");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: oh, God. Your arm. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: oh, fuck");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Hmm? Oh. Yeah. That's gross. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: you look like some kinda mime DJ. Let me see it. I'll help you. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Note: she's helping you out by fixing your left arm");
+         cout<<" "<<endl;
+         blonde_blazerInterest = 1;
+        }
+        else if (s == 'a' || s == 'A'){
+                typewrite("\n Lands punch* ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Goon stays down* ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n '500+ aura'");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Random superhero swoops in for the save*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: That guy I threw. . . He landed on the roof, right?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: All good! ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: Phew");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blonde Blazer: Hi. I'm Blonde Blaze");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n I work over at Superhero Dispatch Network. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: hey. Hi. Yeah. I know who you are. You're, like, famous. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: Oh. Uh, I don't know about that. I'm just a corporate hero for hire. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You're the real deal. You're the famous one. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Sees the beat up hooligans");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: right. . . I don't think infamous is the same as famous, but - -");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: oh, God. Your arm. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: oh, fuck");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Hmm? Oh. Yeah. That's gross. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: you look like some kinda mime DJ. Let me see it. I'll help you. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Note: she's helping you out by fixing your left arm");
+         cout<<" "<<endl;
+         blonde_blazerInterest = 5;
+        }
+        else{
+                typewrite("\n Misses punch*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Gets hit by a crowbar*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Receives heavy concussion* ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Note: This effect has long term effects throughout the fight”");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Random superhero swoops in for the save*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: That guy I threw. . . He landed on the roof, right?");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: All good! ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ???: Phew");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blonde Blazer: Hi. I'm Blonde Blaze");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n I work over at Superhero Dispatch Network. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: hey. Hi. Yeah. I know who you are. You're, like, famous. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: Oh. Uh, I don't know about that. I'm just a corporate hero for hire. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You're the real deal. You're the famous one. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Sees the beat up hooligans");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: right. . . I don't think infamous is the same as famous, but - -");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: oh, God. Your arm. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: oh, fuck");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Hmm? Oh. Yeah. That's gross. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Blazer: you look like some kinda mime DJ. Let me see it. I'll help you. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Note: she's helping you out by fixing your left arm");
+         cout<<" "<<endl;
+          blonde_blazerInterest += 1;
+        }
+       int r;
+        cout<<"=====CHOICE====="<<endl;
+       cout<<"W = Have you done this before? "<<endl;
+       cout<<"A = I'd prefer a professional. "<<endl;
+       cout<<"D = I can do it myself. "<<endl;
+       cin>>r;
+
+       if (r == 'a'|| r == 'A'){
+        typewrite("\n Blazer: It usually dislocates the other way. . . ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: No offense, but I'd prefer a medical professional to do i - - -");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Fixes your arm*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n 'Arm now slightly fixed'");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: uuuooooowuhhhkay. . . Ohh. That's uh, that's okay. ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ' Yeah, that's oh. Okay. Yeah, thank you.  '");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n 'Blazer: You look like you could use a drink.'");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: What makes you say that? ");
+         this_thread::sleep_for(chrono::seconds(2));
+       }
+       else if( r == 'd' || r == 'D'){
+        typewrite("\n Blazer: It usually dislocates the other way. . . ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: it's fine. No, no it's fine don't worry. I can do it myse- -");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Fixes your arm*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Fixes your arm*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n 'Arm slightly fixed'");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ' Note: I think? '");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ' You: fuck!  '");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n ' Yeah, that's oh. Okay. Yeah, thank you.  '");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n 'Blazer: You look like you could use a drink.'");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: What makes you say that? ");
+         this_thread::sleep_for(chrono::seconds(2));
+       }
+       else if (r == 'w'|| r =='W'){
+        typewrite("\n Blazer: It usually dislocates the other way. . . ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: okay, but have you done this before? Cause maybe - - -");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n Fixes your arm*");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n 'Arm now slightly fixed' ");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: Owwwww, wow-jay. Wow, that's okay. Thank you");
+         this_thread::sleep_for(chrono::seconds(2));
+          typewrite("\n ' Yeah, that's oh. Okay. Yeah, thank you.  '");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n 'Blazer: You look like you could use a drink.'");
+         this_thread::sleep_for(chrono::seconds(2));
+         typewrite("\n You: What makes you say that? ");
+         this_thread::sleep_for(chrono::seconds(2));
+       }
+
+}
+
+int main()
+{
+    streetfight();
+
+    return 0;
+}

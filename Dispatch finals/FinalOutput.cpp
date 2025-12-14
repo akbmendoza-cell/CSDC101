@@ -1,8 +1,8 @@
 
 
-#include <iostream>
+#include <iostream>// iostream is js iostream
 #include <unistd.h>// function for typewrite 
-#include <string>
+#include <string>//function for thread
 #include <thread>//function for pause
 #include <chrono>// declaration of seconds and milliseconds
 #include <limits>// for invalid inputs
@@ -12,8 +12,8 @@ int Flambae_Anger_Level = 0;
 bool isMercyful = false;
 bool isRomanticTension = false;
 bool isRobertInjured = false;
-void typewrite(string text, int speed = 50000){// typewrite function for the whole command
-    for ( char c : text){
+void typewrite(string text, int speed = 50000){// speed of the typewrite functon
+    for ( char c : text){//typewrite function
         cout << c << flush;
         
         usleep(speed);
@@ -35,13 +35,13 @@ void Billboard();//scene 6
 int main(){
   char again;
   
-  scene_apartment_interrogation();
+  scene_apartment_interrogation();//goes through storyline first before choices to give it a more gamey 
   warehouse();
   news();
   Bar();
   streetfight();
   Billboard();
-do{
+do{//loop for choices
 int choice;
 
   std::cout<<"==========LOBBY=========="<<endl;//used std because for some reason cout becomes ambigous
@@ -101,7 +101,7 @@ int choice;
   
   case 7:
   cout<<"Thank you for playing."<<endl;
-  return 0;
+  return 0;//return 0 so it doesn't continue to try again
   break;
 
   default:
@@ -111,12 +111,12 @@ int choice;
   cout<<"do you want to try again? (y/n)";
   cin>>again;
   }
-  while (again == 'y' || again == 'Y');
+  while (again == 'y' || again == 'Y');//ends loop here and function if user wants to try again
   cout<<"Thank you for playing."<<endl;
   
     return 0;
 }
-
+//this is where all of the scenes are in
 void scene_apartment_interrogation(){
    typewrite("\nWelcome to Dispatch");
    this_thread::sleep_for(chrono::seconds(1));
@@ -2830,7 +2830,7 @@ cout<<"you have skills pragmatic efficiency."<<endl;
  }
  if(isRobertInjured){
  cout<<"You got injured during the streetfight"<<endl;
- cout<<"slowness debuff ineffect until healed by certain scenario"<<endl;
+ cout<<"slowness debuff ineffect until healed by certain scenerio"<<endl;
  }
  else{
   cout<<" "<<endl;
